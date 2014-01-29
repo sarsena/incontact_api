@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.description = s.summary
   s.authors     = ['Steven Arsena']
   s.email       = 'sarsena@sjarsena.com'
-  s.homepage    = 'https://github.com/sarsena/incontact_api.git'
+  s.homepage    = 'http://rubygems.org/gems/incontact_api'
 
   s.files       = ['lib/incontact_api.rb']
   
