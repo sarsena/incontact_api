@@ -20,10 +20,15 @@ gem install incontact_api
 Define the following as enviroment variables.
 
 UCN_URL
+
 UCN_KEY
+
 GRANT_TYPE
+
 USERNAME
+
 PASSWORD
+
 SCOPE
 
 If you are using rails you could use the [Figaro](https://github.com/laserlemon/figaro) gem to handle setting up environment variables.
