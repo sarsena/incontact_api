@@ -51,7 +51,23 @@ PASSWORD: The password for the above username.
 
 SCOPE: The list of API's you want to access.  Format to a string for example "Admin Chat RealTime"
 
+* See important note below on the SCOPE variable
+
 [Link to InContacts API](https://home-c4.incontact.com/InContact/Help/en-US/index.htm#docs)
+
+### Important Note
+
+Starting April 28th InContact will be changing the string format that can be passed to the SCOPE variable.  
+
+Proper string format below:
+
+* RealTimeApi 
+* AdminApi 
+* AgentApi 
+* CustomApi 
+* AuthenticationApi 
+* PatronApi (this is only available in 14.1 and replaces the ChatApi) 
+* ChatApi (this is valid in 13.2 and is translated into PatronApi when passed in 14.1) 
 
 ## Usage
 
