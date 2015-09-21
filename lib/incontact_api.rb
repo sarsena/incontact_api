@@ -19,6 +19,7 @@ module InContactApi
           req.url '/InContactAuthorizationServer/Token'
           req.headers["Content-Type"]  = "application/json; charset=utf-8"
           req.headers["Authorization"] = "basic #{Configs.key}"
+          req.headers["accept-encoding"] = "none"
           req.body = Configs.request_body
         end
 
@@ -32,7 +33,6 @@ module InContactApi
         api_conn = Faraday.new(:url => authorization[:uri]) do |faraday|
           # faraday.request  :url_encoded             # form-encode POST params
           # faraday.response :logger                  # log requests to STDOUT
-          faraday.headers["accept-encoding"] = "none"
           faraday.headers["Content-Type"]  = "application/json; charset=utf-8"
           faraday.headers["Authorization"] = "bearer #{authorization[:token]}"
           faraday.adapter  Faraday.default_adapter  # make requests with Net::HTTP
