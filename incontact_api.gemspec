@@ -1,15 +1,15 @@
 Gem::Specification.new do |s|
   s.name      = 'incontact_api'
-  s.version   = '1.0'
-  s.date      = '2014-01-29'
+  s.version   = '1.1'
+  s.date      = '2015-09-28'
   s.summary   = 'A Ruby gem to access the InContact API'
   s.description = s.summary
-  s.authors     = ['Steven Arsena']
+  s.authors     = ['Steven Arsena', 'Andrew Castro']
   s.email       = 'sarsena@sjarsena.com'
   s.homepage    = 'http://rubygems.org/gems/incontact_api'
 
   s.files       = ['lib/incontact_api.rb']
-  
+
 
   #Dependencies
   s.add_dependency "httparty"
